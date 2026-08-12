@@ -8,6 +8,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '55 7 * * 3'   # Every Wednesday at 1:20 PM IST
+
 
 jobs:
   test:
